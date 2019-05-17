@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IndependentStudyUnit6
@@ -9,6 +6,8 @@ namespace IndependentStudyUnit6
     static class Program
     {
         /// <summary>
+        /// CO453 Application Programming
+        /// BNU Student ID 21903356
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
@@ -16,7 +15,7 @@ namespace IndependentStudyUnit6
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new BouncingBallForm());
         }
     }
 }
