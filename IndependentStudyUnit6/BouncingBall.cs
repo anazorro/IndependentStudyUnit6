@@ -55,7 +55,7 @@ namespace IndependentStudyUnit6
         private void displayPictureBox_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            g.FillEllipse(Brushes.Red, x, y, 30, 30);
+            g.FillEllipse(Brushes.Red, x, y, ballSize, ballSize);
         }
 
         /// <summary>
@@ -87,6 +87,30 @@ namespace IndependentStudyUnit6
             }
 
             Refresh();
+        }
+
+        /// <summary>
+        /// This method will respond to the Up key and the Down key.
+        /// When the Up key is pressed the ball size increases by 10.
+        /// When the Down key is pressed the ball size decreases by 10.
+        /// </summary>
+        /// <returns></returns>
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            const int TEN = 10;
+            
+            if (keyData == Keys.Up)
+            {
+                ballSize = ballSize + TEN;
+                return true;
+            }
+            else if (keyData == Keys.Down)
+            {
+                ballSize = ballSize - TEN;
+                return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
         }
     }
 }
