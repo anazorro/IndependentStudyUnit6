@@ -15,7 +15,7 @@ namespace IndependentStudyUnit6
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BouncingBallForm());
+            Application.Run(new DrawingAHouse());
         }
     }
 }
