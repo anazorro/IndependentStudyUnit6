@@ -59,7 +59,7 @@
             // 
             // ballPositionTimer
             // 
-            this.ballPositionTimer.Interval = 500;
+            this.ballPositionTimer.Interval = 300;
             this.ballPositionTimer.Tick += new System.EventHandler(this.ballPositionTimer_Tick);
             // 
             // stopButton
